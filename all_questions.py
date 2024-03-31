@@ -86,7 +86,7 @@ def question8():
     answers["(a) Relationship between X_1 and X_2"] = "dependent"
     
     # string: "yes" or "no"
-    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "no"
+    answers["(b) X_1 and X_2 conditionally independent given the class?"] = "yes"
     
     # float
     answers["(c) P(X_1=1 | +)"] = 0.8
@@ -102,7 +102,7 @@ def question8():
     answers["(d) Row 3"] = "-"
     answers["(d) Row 4"] = "-"
     # float between 0 and 1
-    answers["(d) Training error rate"] = 0.3
+    answers["(d) Training error rate"] = 0.25
     return answers
 
 # --------------------------------------------------------
@@ -136,8 +136,8 @@ def question10():
   
     # Probabilities for the sample R = (A=1,B=1,C=1)
     answers["(b) P(+|R)"] = 0.857  
-    answers["(b) P(R|+)"] = 0.12
-    answers["(b) P(R|-)"] = 0.02
+    answers["(b) P(R|+)"] = 0.192
+    answers["(b) P(R|-)"] = 0.032
 
     # Predicted class label for the sample
     answers["(b) class label"] = "+"
@@ -156,21 +156,21 @@ def question10():
     # For part (d), repeating the analysis with B=0
     answers["(d) P(A=1)"] = 0.5
     answers["(d) P(B=0)"] = 0.6  
-    answers["(d) P(A=1,B=0)"] = 0.55
+    answers["(d) P(A=1,B=0)"] = 0.3
 
     # Checking independence for part (d)
     answers["(d) A independent of B?"] = "yes"
   
     # Conditional independence given class "+"
-    answers["(e) P(A=1,B=1|+)"] = 0.4
+    answers["(e) P(A=1,B=1|+)"] = 0.2
     answers["(e) P(A=1|+)"] = 0.6
-    answers["(e) P(B=1|+)"] = 0.5
+    answers["(e) P(B=1|+)"] = 0.4
 
     # Checking conditional independence given class "+"
-    answers["(e) A independent of B given class +?"] = "yes"
+    answers["(e) A independent of B given class +?"] = "no"
 
     # Explanation for conditional independence
-    answers["(e) A and B conditionally independent given class +, explain"] = "Naive Bayes assumes features are conditionally independent given the class."
+    answers["(e) A and B conditionally independent given class +, explain"] = "For class = +, 0.24(product of the probabilities) not equal to 0.2(joint probability) , proving that A and B are not conditionally independent. The equivalence must exist for variables to be conditionally independent given the class.."
   
     return answers
 # --------------------------------------------------------

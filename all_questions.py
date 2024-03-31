@@ -14,7 +14,7 @@ def question1():
     answers["(d)"] = "yes"
 
     # explain-string: explanation in english prose
-    answers["(a) explain"] = "Some instances can trigger more than one rule, for example a person could be a home ownerand have a low annual income, hence they are not mutually exclusive."
+    answers["(a) explain"] = "Some instances can trigger more than one rule, for example a person could be a home owner and have a low annual income, hence they are not mutually exclusive."
     answers["(b) explain"] = "The rule set is non-exhaustive, missing coverage for certain combinations like high income and employment status."
     answers["(c) explain"] = "Rule ordering is critical as it influences classification outcomes, especially in cases of overlapping rules, such as when being a homeowner and single could trigger multiple rules."
     answers["(d) explain"] = "A default class ensures that every instance can be classified even if it does not meet any of the specific rule's requirements."

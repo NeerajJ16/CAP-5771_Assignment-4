@@ -155,16 +155,16 @@ def question10():
   
     # For part (d), repeating the analysis with B=0
     answers["(d) P(A=1)"] = 0.5
-    answers["(d) P(B=0)"] = 0.6  # 1 - P(B=1) from part (c)
-    answers["(d) P(A=1,B=0)"] = "Requires calculation based on provided data"
+    answers["(d) P(B=0)"] = 0.6  
+    answers["(d) P(A=1,B=0)"] = 0.55
 
     # Checking independence for part (d)
     answers["(d) A independent of B?"] = "yes"
   
     # Conditional independence given class "+"
-    answers["(e) P(A=1,B=1|+)"] = "Requires calculation based on provided data"
+    answers["(e) P(A=1,B=1|+)"] = 0.4
     answers["(e) P(A=1|+)"] = 0.6
-    answers["(e) P(B=1|+)"] = 0.4
+    answers["(e) P(B=1|+)"] = 0.5
 
     # Checking conditional independence given class "+"
     answers["(e) A independent of B given class +?"] = "yes"
